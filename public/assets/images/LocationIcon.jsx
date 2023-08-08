@@ -2,7 +2,7 @@ export const LocationIcon = ({
                                  fill = "currentColor", filled, size, height, width, label
                              }) => {
     return (<>
-        <svg stroke="currentColor" fill="currentColor" version="1.1" id="Capa_1" width="1em" height="1em" viewBox="0 0 395.71 395.71"  style={{ verticalAlign: 'sub'}}>
+        <svg stroke="currentColor" fill="currentColor" version="1.1" id="Capa_1" width="1.1em" height="1.2em" viewBox="0 0 395.71 395.71"  style={{ verticalAlign: 'sub'}}>
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" stroke="#CCCCCC"
                strokeWidth="0.79142"></g>

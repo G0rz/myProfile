@@ -12,7 +12,7 @@ export default function Home() {
 
     return (<main>
         <Grid.Container justify={'center'} alignItems={'center'} css={{marginTop: '1rem'}}>
-            <Grid md={4} xs={12} gap={2}>
+            <Grid md={4} xs={12}>
                 <Grid.Container gap={2}>
                     <Resume/>
                     <Links/>
@@ -20,7 +20,7 @@ export default function Home() {
                 </Grid.Container>
             </Grid>
             <Grid md={8} xs={12}>
-                <Grid.Container>
+                <Grid.Container gap={2}>
                     <Grid xs={12} md={6}>
                         <Experience/>
                     </Grid>

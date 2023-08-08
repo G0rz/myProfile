@@ -1,15 +1,14 @@
-import {Button, Card, Grid, Image, Loading, Switch, Text} from "@nextui-org/react";
-import {DownloadIcon} from "@/public/assets/images/DownloadIcon";
-import {SunIcon} from "@/public/assets/images/SunIcon";
-import {MoonIcon} from "@/public/assets/images/MoonIcon";
+import {Card, Grid, Text, Link} from "@nextui-org/react";
 
 export default function Footer() {
+
+
     return <>
-        <Grid.Container  justify={'center'} alignItems={'center'}>
+        <Grid.Container justify={'center'} alignItems={'center'} gap={1}>
             <Grid>
                 <Card>
                     <Card.Body css={{padding: '.5rem'}}>
-                        <Text h6 css={{margin: 0}}>Hecho por G0rz © 2023</Text>
+                        <Text> Hecho por <a style={{margin: 0}} href={'https://github.com/G0rz/'} rel="noopener noreferrer" target="_blank"> G0rz</a> © 2023</Text>
                     </Card.Body>
                 </Card>
             </Grid>

@@ -32,7 +32,7 @@ export default function TimelineItem({fecha, puesto, enlace}) {
             <div style={{
                 marginBottom: '.1rem'
             }}>
-                <a href={enlace[0].url !== '' ? enlace[0].url : '#' }>{enlace[0].company_name}</a>
+                <a rel="noopener noreferrer" target="_blank" href={enlace[0].url !== '' ? enlace[0].url : '#' }>{enlace[0].company_name}</a>
             </div>
         </li>
     </>
