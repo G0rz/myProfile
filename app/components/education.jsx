@@ -2,32 +2,30 @@ import {Card, Container, Grid, Row, Text} from "@nextui-org/react";
 import Timeline from "@/app/components/timeline";
 
 export default function Education() {
+
     const schools = [{
-        date: "AGO 2015 - DIC 2020", job: "JAVA Web Developer", company: [{
-            url: "", company_name: "Dirección General de Innovación e Implementación", latest: true
+        date: `Julio 2021 - Noviembre 2022`, job: "Idioma Inglés", company: [{
+            url: "https://think-e.mx/", company_name: "Think-e English Courses", latest: true
         }]
     }, {
-        date: "MAR 2022 - FEB 2023", job: "Frontend React Web Developer", company: [{
-            url: "", company_name: "DADUVA SYSTEMS", latest: false
+        date: `Agosto 2015 - Diciembre 2020`, job: "Ingeniería en Sistemas Computacionales", company: [{
+            url: "https://www.tolucatecnm.mx/", company_name: "Instituto Tecnológico de Toluca", latest: false
         }]
-    }, {
-        date: "MAR 2021 - MAR 2022", job: "Prácticas profesionales/Desarrollador Web Jr. Full-Stack", company: [{
-            url: "", company_name: "Satori Tech", latest: false
-        }]
-    }, {
-        date: "MAR 2019 - JUL 2019", job: "Desarrollador de Sistemas de Planificación Empresarial", company: [{
-            url: "", company_name: "EDEM Consultores", latest: false
-        }]
-    },];
+    }];
     return <>
-        <Grid xs={12}>
+        <Grid xs={12} md={6}>
             <Container>
                 <Card>
                     <Card.Body>
                         <Row justify="center" align="center">
                             <Grid.Container>
                                 <Grid xs={12}>
-                                    <Text h3>Educación</Text>
+                                    <Text h3 css={{
+                                        marginLeft: '.75rem',
+                                        fontWeight: '$semibold',
+                                        fontSize: '$xl',
+                                        lineHeight: '$lg'
+                                    }}>Educación</Text>
                                 </Grid>
                                 <Grid>
                                     <Timeline list={schools}/>

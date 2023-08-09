@@ -1,8 +1,8 @@
-import {Badge, Card, Col, Container, Grid, Row, Text} from "@nextui-org/react";
+import {Badge, Card, Container, Grid, Row, Text} from "@nextui-org/react";
 
 export default function Skills() {
 
-    const listSkills = ['JavaEE','Java', 'Next.js', 'React', 'MUI', 'Tailwind', 'Vue.js', 'Vuetify', 'Javascript', 'Laravel/Blade', 'PHP', 'Bootstrap', 'CSS', 'SQL', 'Git', 'Linux']
+    const listSkills = ['JavaEE', 'Java', 'Next.js', 'React', 'MUI', 'Tailwind', 'Vue.js', 'Vuetify', 'Javascript', 'Laravel/Blade', 'PHP', 'Bootstrap', 'CSS', 'SQL', 'Git', 'Linux']
 
     return <>
         <Grid xs={12}>
@@ -12,7 +12,12 @@ export default function Skills() {
                         <Row justify="center" align="center">
                             <Grid.Container justify={'center'} alignItems={'center'}>
                                 <Grid xs={12}>
-                                    <Text h3 css={{marginLeft: '.75rem'}}>Tech Stack</Text>
+                                    <Text h2 css={{
+                                        marginLeft: '.75rem',
+                                        fontWeight: '$semibold',
+                                        fontSize: '$xl',
+                                        lineHeight: '$lg'
+                                    }}>Tech Stack</Text>
                                 </Grid>
                                 {listSkills.map((element, key) => {
                                     return <Grid key={key}>

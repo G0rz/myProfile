@@ -21,12 +21,8 @@ export default function Home() {
             </Grid>
             <Grid md={8} xs={12}>
                 <Grid.Container gap={2}>
-                    <Grid xs={12} md={6}>
-                        <Experience/>
-                    </Grid>
-                    <Grid xs={12} md={6}>
-                        <Education/>
-                    </Grid>
+                    <Experience/>
+                    <Education/>
                 </Grid.Container>
             </Grid>
             <Grid xs={12} md={12}>

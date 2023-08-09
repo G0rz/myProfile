@@ -1,15 +1,15 @@
 import Providers from './providers'
-import {Inter} from "next/font/google";
+import {Roboto} from "next/font/google";
 
-const inter = Inter({subsets: ['latin']})
+const roboto = Roboto({subsets: ['latin'], weight: ["400", "500", "700", "900"]})
 
 export const metadata = {
     title: 'Leonardo Yael Bazán Becerril',
-    description: 'Software Engineer | Fullstack Developer | JavaScript | React | Java '
+    description: 'Pasante de Ingeniería en Sistemas Computacionales | Fullstack Web developer | JavaScript | React | Java | PHP'
 }
 export default function RootLayout({children}) {
     return (<html lang="es">
-    <body className={inter.className}>
+    <body className={roboto.className}>
     <Providers>{children}</Providers>
     </body>
     </html>)

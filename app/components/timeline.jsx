@@ -1,5 +1,4 @@
 import TimelineItem from "@/app/components/timelineItem";
-import SmartLinks from "@/app/components/smartLinks";
 
 export default function Timeline({list}) {
 
@@ -15,7 +14,8 @@ export default function Timeline({list}) {
             padding: 0
         }}>
             {list.map((item, key) => {
-                return <TimelineItem key={key} fecha={item.date} puesto={item.job} enlace={item.company} latest={item.latest}/>
+                return <TimelineItem key={key} fecha={item.date} puesto={item.job} enlace={item.company}
+                                     latest={item.latest}/>
             })}
         </ol>
     </>

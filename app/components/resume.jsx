@@ -11,11 +11,11 @@ export default function Resume() {
 
     const {setTheme} = useNextTheme();
     const {isDark} = useTheme();
-    const [gitProfile, setGitProfile] = useState(null);
+    const [gitProfile, setGitProfile] = useState({avatar_url: '', name: '', bio: ''});
     const [loading, setLoading] = useState(false);
 
     useEffect(() => {
-        getData(setGitProfile);
+        getData(setGitProfile).then(r => void r);
     }, []);
 
     const getCVUrl = () => {
@@ -40,7 +40,7 @@ export default function Resume() {
             <Container>
                 <Card>
                     <Card.Header>
-                        <Row justify="center" align="center" css={{paddingTop: '2rem'}}>
+                        <Row justify="center" align="center" css={{paddingTop: '1.5rem'}}>
                             <Switch
                                 style={{position: 'absolute', top: 0, right: 0}}
                                 checked={isDark}
@@ -52,22 +52,23 @@ export default function Resume() {
                                 style={{
                                     borderRadius: '50%', border: '4px solid #17C964',
                                 }}
-                                src={gitProfile ? gitProfile.avatar_url : '/assets/images/profile.webp'}
+                                src={gitProfile.avatar_url !== '' ? gitProfile.avatar_url : '/assets/images/profile.webp'}
                                 alt="Profile Image"
-                                width={128}
-                                height={128}
+                                width={150}
+                                height={150}
                             />
                         </Row>
                     </Card.Header>
                     <Card.Body css={{textAlign: 'center'}}>
-                        {gitProfile ? (<>
+                        {gitProfile.name ? (<>
                             <Row justify="center" align="center">
-                                <Text
-                                    h3>{gitProfile !== null ? gitProfile.name : 'Leonardo Yael Bazán Becerril'}</Text>
+                                <Text h1 css={{
+                                    fontWeight: '$semibold', fontSize: '$2xl', lineHeight: '$lg'
+                                }}>{gitProfile.name !== '' ? gitProfile.name : 'Leonardo Yael Bazán Becerril'}</Text>
                             </Row>
                             <Row justify="center" align="center">
                                 <Text weight={'medium'} span css={{opacity: '.7', marginBottom: '.75rem'}}>
-                                    {gitProfile !== null ? gitProfile.bio : 'Pasante de Ingeniería en Sistemas Computacionales'}
+                                    {gitProfile.bio !== '' ? gitProfile.bio : 'Pasante de Ingeniería en Sistemas Computacionales'}
                                 </Text>
                             </Row>
                             <Row justify="center" align="center">

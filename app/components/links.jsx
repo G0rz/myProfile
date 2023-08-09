@@ -1,7 +1,4 @@
-import {Badge, Button, Card, Container, Grid, Image, Loading, Row, Switch, Text} from "@nextui-org/react";
-import {getData} from "@/app/utils/functions";
-import {useEffect, useState} from "react";
-import {TwitterIcon} from "@/public/assets/images/TwitterIcon";
+import {Card, Container, Grid, Row, Text} from "@nextui-org/react";
 import {LocationIcon} from "@/public/assets/images/LocationIcon";
 import SmartLinks from "@/app/components/smartLinks";
 import {GithubIcon} from "@/public/assets/images/GithubIcon"
@@ -12,24 +9,20 @@ import {MailIcon} from "@/public/assets/images/MailIcon";
 const enlaces = [{
     icon: <GithubIcon/>, name: 'Github', username: 'G0rz', url: 'https://github.com/G0rz'
 }, {
-    icon: <TwitterIcon/>, name: 'Twitter', username: 'XDeathlyZero', url: 'https://twitter.com/XDeathZero'
-}, {
-    icon: <LinkedinIcon/>, name: 'LinkedIn', username: 'Leonardo Yael Bazán Becerril', url: 'https://www.linkedin.com/in/typenull/'
+    icon: <LinkedinIcon/>,
+    name: 'LinkedIn',
+    username: 'Leonardo Yael Bazán Becerril',
+    url: 'https://www.linkedin.com/in/typenull/'
 }, {
     icon: <WebIcon/>, name: 'Website', username: 'leonardobecerril.netlify.com', url: 'https://twitter.com/XDeathZero'
 }, {
-    icon: <MailIcon/>, name: 'Email', username: 'leonardo.becerril@hotmail.com', url: 'mailto:leonardo.becerril@hotmail.com'
+    icon: <MailIcon/>,
+    name: 'Email',
+    username: 'leonardo.becerril@hotmail.com',
+    url: 'mailto:leonardo.becerril@hotmail.com'
 }]
 
 export default function Links() {
-
-    const [gitProfile, setGitProfile] = useState(null)
-    const [loading, setLoading] = useState(false);
-
-    useEffect(() => {
-        getData(setGitProfile)
-    }, [])
-
 
     return <>
         <Grid xs={12}>

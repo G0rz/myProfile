@@ -2,32 +2,48 @@ import {Card, Container, Grid, Row, Text} from "@nextui-org/react";
 import Timeline from "@/app/components/timeline";
 
 export default function Experience() {
+
+    const month = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
     const jobs = [{
-        date: "FEB 2023 - TODAY", job: "JAVA Web Developer", company: [{
+        date: `${month[1]} 2023 - Presente`, job: "JAVA Web Developer", company: [{
             url: "", company_name: "Dirección General de Innovación e Implementación", latest: true
         }]
     }, {
-        date: "MAR 2022 - FEB 2023", job: "Frontend React Web Developer", company: [{
+        date: `${month[2]} 2022 - ${month[1]} 2023`, job: "Frontend React Web Developer", company: [{
             url: "", company_name: "DADUVA SYSTEMS", latest: false
         }]
     }, {
-        date: "MAR 2021 - MAR 2022", job: "Prácticas profesionales/Desarrollador Web Jr. Full-Stack", company: [{
+        date: `${month[2]} 2021 - ${month[2]} 2022`,
+        job: "Prácticas profesionales/Desarrollador Web Jr. Full-Stack",
+        company: [{
             url: "", company_name: "Satori Tech", latest: false
         }]
     }, {
-        date: "MAR 2019 - JUL 2019", job: "Desarrollador de Sistemas de Planificación Empresarial", company: [{
+        date: `${month[2]} 2019 - ${month[6]} 2019`,
+        job: "Desarrollador de Sistemas de Planificación Empresarial",
+        company: [{
             url: "", company_name: "EDEM Consultores", latest: false
         }]
-    },];
+    }, {
+        date: '', job: "Soporte Técnico", company: [{
+            url: "https://leonardo-becerril.netlify.app/", company_name: "Autodidacta", latest: false
+        }]
+    }];
     return <>
-        <Grid xs={12}>
+        <Grid xs={12} md={6}>
             <Container>
                 <Card>
                     <Card.Body>
                         <Row justify="center" align="center">
                             <Grid.Container>
                                 <Grid xs={12}>
-                                    <Text h3>Experiencia</Text>
+                                    <Text h3 css={{
+                                        marginLeft: '.75rem',
+                                        fontWeight: '$semibold',
+                                        fontSize: '$xl',
+                                        lineHeight: '$lg'
+                                    }}>Experiencia</Text>
                                 </Grid>
                                 <Grid>
                                     <Timeline list={jobs}/>
