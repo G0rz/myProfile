@@ -24,24 +24,22 @@ const enlaces = [{
 
 export default function Links() {
 
-    return <>
-        <Grid xs={12}>
-            <Container>
-                <Card>
-                    <Card.Body>
-                        <Row justify="center" align="center" style={{padding: '.5rem', opacity: '.6'}}>
-                            <Text size="$sm" weight={'medium'}><LocationIcon/> Based in: </Text>
-                            <Text css={{marginLeft: 'auto'}} size="$sm" weight={'medium'}>Toluca, Estado de
-                                México</Text>
-                        </Row>
-                        {enlaces.map((item, key) => {
-                            return <SmartLinks key={key} icon={item.icon} name={item.name}
-                                               username={item.username}
-                                               url={item.url}/>
-                        })}
-                    </Card.Body>
-                </Card>
-            </Container>
-        </Grid>
-    </>
+    return (<Grid xs={12}>
+        <Container>
+            <Card>
+                <Card.Body>
+                    <Row justify="center" align="center" style={{padding: '.5rem', opacity: '.6'}}>
+                        <Text size="$sm" weight={'medium'}><LocationIcon/> Based in: </Text>
+                        <Text css={{marginLeft: 'auto'}} size="$sm" weight={'medium'}>Toluca, Estado de
+                            México</Text>
+                    </Row>
+                    {enlaces.map((item, key) => {
+                        return <SmartLinks key={key} icon={item.icon} name={item.name}
+                                           username={item.username}
+                                           url={item.url}/>
+                    })}
+                </Card.Body>
+            </Card>
+        </Container>
+    </Grid>);
 }

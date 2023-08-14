@@ -11,7 +11,7 @@ export default function Providers({children}) {
         return <>{CssBaseline.flush()}</>
     })
 
-    return (<>
+    return (
         <NextThemesProvider
             defaultTheme="system"
             attribute="class"
@@ -24,5 +24,5 @@ export default function Providers({children}) {
                 {children}
             </NextUIProvider>
         </NextThemesProvider>
-    </>)
+    )
 }

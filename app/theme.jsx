@@ -4,8 +4,9 @@ export const darkTheme = createTheme({
     type: "dark", // it could be "light" or "dark"
     theme: {
         colors: {
-            background: '#15191E',
+            background: '#0F1623',
             backgroundContrast: "#1D232A",
+            primary: "#697177"
         },
         fontSizes: {
             xs: '0.75rem', /* 12px */
@@ -107,8 +108,9 @@ export const lightTheme = createTheme({
     type: 'light',
     theme: {
         colors: {
-            background: "#E5E6E6",
-            backgroundContrast: "#FFFFFF",
+            background: "#F0F2F5",
+            backgroundContrast: "#FEFEFE",
+            primary: "#697177"
         },
         fontSizes: {
             xs: '0.75rem', /* 12px */

@@ -2,44 +2,42 @@ import {Text} from "@nextui-org/react";
 
 export default function TimelineItem({fecha, puesto, enlace}) {
 
-    return <>
-        <li style={{
-            marginLeft: '1rem', marginBottom: '1.25rem', borderWidth: 1,
+    return (<li style={{
+        marginLeft: '1rem', marginBottom: '1.25rem', borderWidth: 1,
+    }}>
+        <div style={fecha.includes('Presente') ? {
+            position: 'absolute',
+            left: '-4.5px',
+            backgroundColor: "#17C964",
+            borderColor: "#0072F5",
+            borderWidth: 1,
+            borderRadius: '50%',
+            width: '0.5rem',
+            height: '0.5rem',
+            marginTop: '.375rem'
+        } : {
+            position: 'absolute',
+            left: '-4.5px',
+            backgroundColor: "rgba(229, 230, 230, 1)",
+            borderColor: "#0072F5",
+            borderWidth: 1,
+            borderRadius: '50%',
+            width: '0.5rem',
+            height: '0.5rem',
+            marginTop: '.375rem'
         }}>
-            <div style={fecha.includes('Presente') ? {
-                position: 'absolute',
-                left: '-4.5px',
-                backgroundColor: "#17C964",
-                borderColor: "#0072F5",
-                borderWidth: 1,
-                borderRadius: '50%',
-                width: '0.5rem',
-                height: '0.5rem',
-                marginTop: '.375rem'
-            } : {
-                position: 'absolute',
-                left: '-4.5px',
-                backgroundColor: "rgba(229, 230, 230, 1)",
-                borderColor: "#0072F5",
-                borderWidth: 1,
-                borderRadius: '50%',
-                width: '0.5rem',
-                height: '0.5rem',
-                marginTop: '.375rem'
-            }}>
-            </div>
-            <Text css={{
-                fontSize: '$xs', lineHeight: '$sm', marginTop: '.125rem', marginBottom: '.125rem'
-            }}>{fecha}</Text>
-            <Text css={{
-                fontWeight: '$semibold', fontSize: '$lg', lineHeight: '$lg'
-            }}>{puesto}</Text>
-            <Text css={{
-                fontWeight: '$semibold', fontSize: '$base', lineHeight: '$lg'
-            }}>
-                <a rel="noopener noreferrer" target="_blank"
-                   href={enlace[0].url !== '' ? enlace[0].url : '#'}>{enlace[0].company_name}</a>
-            </Text>
-        </li>
-    </>
+        </div>
+        <Text css={{
+            fontSize: '$xs', lineHeight: '$sm', marginTop: '.125rem', marginBottom: '.125rem'
+        }}>{fecha}</Text>
+        <Text css={{
+            fontWeight: '$semibold', fontSize: '$lg', lineHeight: '$lg'
+        }}>{puesto}</Text>
+        <Text css={{
+            fontWeight: '$semibold', fontSize: '$base', lineHeight: '$lg'
+        }}>
+            <a rel="noopener noreferrer" target="_blank" style={{color:"#697177"}}
+               href={enlace[0].url !== '' ? enlace[0].url : '#'}>{enlace[0].company_name}</a>
+        </Text>
+    </li>);
 }
