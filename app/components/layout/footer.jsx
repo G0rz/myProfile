@@ -6,11 +6,12 @@ export default function Footer() {
         <Grid>
             <Card>
                 <Card.Body css={{padding: '.5rem'}}>
-                    <Text  css={{
+                    <Text css={{
                         margin: 0, padding: '.5rem', fontWeight: '$base', lineHeight: '$xs',
-                    }}> Hecho por <a href={'https://github.com/G0rz/'}
-                                     rel="noopener noreferrer" style={{color: "#697177", fontWeight:'bold'}}
-                                     target="_blank"> G0rz</a> © {new Date().getFullYear()}</Text>
+                    }}> © {new Date().getFullYear()}<a href={'https://github.com/G0rz/'}
+                                                       rel="noopener noreferrer"
+                                                       style={{color: "#697177", fontWeight: 'bold'}}
+                                                       target="_blank"> G0rz</a></Text>
                 </Card.Body>
             </Card>
         </Grid>

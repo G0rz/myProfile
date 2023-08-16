@@ -5,6 +5,7 @@ import {GithubIcon} from "@/public/assets/images/GithubIcon"
 import {LinkedinIcon} from "@/public/assets/images/LinkedinIcon";
 import {WebIcon} from "@/public/assets/images/WebIcon";
 import {MailIcon} from "@/public/assets/images/MailIcon";
+import {IndeedIcon} from "@/public/assets/images/IndeedIcon";
 
 const enlaces = [{
     icon: <GithubIcon/>, name: 'Github', username: 'G0rz', url: 'https://github.com/G0rz'
@@ -14,7 +15,12 @@ const enlaces = [{
     username: 'Leonardo Yael Bazán Becerril',
     url: 'https://www.linkedin.com/in/typenull/'
 }, {
-    icon: <WebIcon/>, name: 'Website', username: 'leonardobecerril.netlify.com', url: 'https://twitter.com/XDeathZero'
+    icon: <IndeedIcon/>,
+    name: 'Indeed',
+    username: 'Leonardo Yael Bazán Becerril',
+    url: 'https://www.linkedin.com/in/typenull/'
+}, {
+    icon: <WebIcon/>, name: 'Website', username: 'leonardo-becerril.netlify.com', url: 'https://leonardo-becerril.netlify.app/'
 }, {
     icon: <MailIcon/>,
     name: 'Email',

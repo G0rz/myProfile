@@ -6,6 +6,7 @@ import {useTheme as useNextTheme} from "next-themes";
 import {useEffect, useState} from "react";
 import {getData} from "@/app/utils/functions";
 import Image from 'next/image';
+import profilePic from '@/public/assets/images/profile.webp'
 
 export default function Resume() {
 
@@ -19,9 +20,9 @@ export default function Resume() {
     }, []);
 
     const getCVUrl = () => {
-        // Implement your logic to get the CV URL dynamically
         return '/assets/files/CV-LeonardoYaelBazánBecerril.pdf';
     };
+
 
     const downloadCV = () => {
         setLoading(true);
@@ -50,10 +51,11 @@ export default function Resume() {
                         />
                         <Image
                             style={{
-                                borderRadius: '50%', border: '4px solid #17C964',
+                                borderRadius: '50%', border: '4px solid #17C964', objectFit: 'cover'
                             }}
-                            src={gitProfile.avatar_url !== '' ? gitProfile.avatar_url : '/assets/images/profile.webp'}
+                            src={profilePic}
                             alt="Profile Image"
+                            unoptimized
                             width={150}
                             height={150}
                         />
@@ -68,7 +70,7 @@ export default function Resume() {
                         </Row>
                         <Row justify="center" align="center">
                             <Text weight={'medium'} span css={{opacity: '.7', marginBottom: '.75rem'}}>
-                                {gitProfile.bio !== '' ? gitProfile.bio : 'Pasante de Ingeniería en Sistemas Computacionales'}
+                                {gitProfile.bio !== '' ? gitProfile.bio : 'Computer Systems Engineering Intern'}
                             </Text>
                         </Row>
                         <Row justify="center" align="center">
@@ -81,10 +83,10 @@ export default function Resume() {
                                 disabled={loading}
                                 auto
                             >
-                                {loading ? <Loading type="points" color="currentColor"/> : 'Descargar Resumen'}
+                                {loading ? <Loading type="points" color="currentColor"/> : 'Download Resume'}
                             </Button>
                         </Row>
-                    </>) : (<Loading type="points" color="primary"/>)}
+                    </>) : (<Loading type="points" color="success"/>)}
                 </Card.Body>
             </Card>
         </Container>

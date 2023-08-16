@@ -3,15 +3,15 @@ import Timeline from "@/app/components/timeline";
 
 const schools = [
     {
-        date: `Abril 2023`, job: "Certificación TOEFL ITP - Nivel B1", company: [{
+        date: `April 2023`, job: "TOEFL ITP Certification - Level B1", company: [{
             url: "https://www.tolucatecnm.mx/categoria/61/coordinacion-de-lenguas-extranjeras-cle", company_name: "Instituto Tecnológico de Toluca - CLE", latest: true
         }]
     },{
-    date: `Julio 2021 - Noviembre 2022`, job: "Idioma Inglés", company: [{
+    date: `July 2021 - November 2022`, job: "English language", company: [{
         url: "https://think-e.mx/", company_name: "Think-e English Courses", latest: true
     }]
 }, {
-    date: `Agosto 2015 - Diciembre 2020`, job: "Ingeniería en Sistemas Computacionales", company: [{
+    date: `August 2015 - December 2020`, job: "Computer Systems Engineering", company: [{
         url: "https://www.tolucatecnm.mx/", company_name: "Instituto Tecnológico de Toluca", latest: false
     }]
 }];
@@ -30,7 +30,7 @@ export default function Education() {
                                     fontWeight: '$semibold',
                                     fontSize: '$xl',
                                     lineHeight: '$lg'
-                                }}>Educación</Text>
+                                }}>Education</Text>
                             </Grid>
                             <Grid>
                                 <Timeline list={schools}/>

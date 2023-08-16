@@ -7,8 +7,11 @@ import Links from "@/app/components/links";
 import Skills from "@/app/components/skills";
 import Experience from "@/app/components/experience";
 import Education from "@/app/components/education";
+import initFirebase from "@/app/initFirebase";
 
 export default function Home() {
+
+    initFirebase()
 
     return (<main>
         <Grid.Container justify={'center'} alignItems={'center'} css={{marginTop: '1rem'}}>

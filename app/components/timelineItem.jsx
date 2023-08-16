@@ -5,7 +5,7 @@ export default function TimelineItem({fecha, puesto, enlace}) {
     return (<li style={{
         marginLeft: '1rem', marginBottom: '1.25rem', borderWidth: 1,
     }}>
-        <div style={fecha.includes('Presente') ? {
+        <div style={fecha.includes('Present') ? {
             position: 'absolute',
             left: '-4.5px',
             backgroundColor: "#17C964",

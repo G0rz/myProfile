@@ -1,11 +1,13 @@
 import {Card, Container, Grid, Row, Text} from "@nextui-org/react";
 import Timeline from "@/app/components/timeline";
 
-const month = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 const jobs = [{
-    date: `${month[1]} 2023 - Presente`, job: "JAVA Web Developer", company: [{
-        url: "https://dgi.edomex.gob.mx/", company_name: "Dirección General de Innovación e Implementación", latest: true
+    date: `${month[1]} 2023 - Present`, job: "Java Web Developer", company: [{
+        url: "https://dgi.edomex.gob.mx/",
+        company_name: "Dirección General de Innovación e Implementación",
+        latest: true
     }]
 }, {
     date: `${month[2]} 2022 - ${month[1]} 2023`, job: "Frontend React Web Developer", company: [{
@@ -13,19 +15,19 @@ const jobs = [{
     }]
 }, {
     date: `${month[2]} 2021 - ${month[2]} 2022`,
-    job: "Prácticas profesionales/Desarrollador Web Jr. Full-Stack",
+    job: "Internship / Full Stack Web Developer Jr.",
     company: [{
         url: "https://satoritech.com.mx/", company_name: "Satori Tech", latest: false
     }]
 }, {
     date: `${month[2]} 2019 - ${month[6]} 2019`,
-    job: "Desarrollador de Sistemas de Planificación Empresarial",
+    job: "Trainee for Business Planning Systems Developer",
     company: [{
         url: "https://www.edemconsultores.com.mx/", company_name: "EDEM Consultores", latest: false
     }]
 }, {
-    date: '', job: "Soporte Técnico", company: [{
-        url: "https://leonardobecerril.netlify.app/", company_name: "Autodidacta", latest: false
+    date: '', job: "Technical Support Engineer", company: [{
+        url: "https://leonardobecerril.netlify.app/", company_name: "Autodidact", latest: false
     }]
 }];
 
@@ -39,11 +41,8 @@ export default function Experience() {
                         <Grid.Container>
                             <Grid xs={12}>
                                 <Text h3 css={{
-                                    marginLeft: '.75rem',
-                                    fontWeight: '$semibold',
-                                    fontSize: '$xl',
-                                    lineHeight: '$lg'
-                                }}>Experiencia</Text>
+                                    marginLeft: '.75rem', fontWeight: '$semibold', fontSize: '$xl', lineHeight: '$lg'
+                                }}>Experience</Text>
                             </Grid>
                             <Grid>
                                 <Timeline list={jobs}/>
