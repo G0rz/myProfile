@@ -18,8 +18,8 @@ const schools = [
 
 export default function Education() {
 
-    return (<Grid xs={12} md={6}>
-        <Container>
+    return (<Grid xs={12} md={6} style={{padding: '1rem 0 1rem 0'}}>
+        <Container >
             <Card>
                 <Card.Body>
                     <Row justify="center" align="center">

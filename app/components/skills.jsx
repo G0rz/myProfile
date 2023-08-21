@@ -4,7 +4,7 @@ export default function Skills() {
 
     const listSkills = ['Java', 'Next.js', 'React', 'MUI', 'Tailwind', 'Vue.js', 'Vuetify', 'Git', 'Javascript', 'Laravel/Blade', 'PHP', 'Bootstrap', 'CSS', 'HTML', 'SQL', 'UNIX/Linux']
 
-    return (<Grid xs={12}>
+    return (<Grid xs={12} style={{padding: '1rem 0 1rem 0'}}>
         <Container>
             <Card>
                 <Card.Body>

@@ -36,7 +36,7 @@ export default function Resume() {
         return timer;
     };
 
-    return (<Grid xs={12}>
+    return (<Grid xs={12} style={{padding: '1rem 0 1rem 0'}}>
         <Container>
             <Card>
                 <Card.Header>

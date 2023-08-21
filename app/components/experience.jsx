@@ -20,7 +20,7 @@ const jobs = [{
         url: "https://satoritech.com.mx/", company_name: "Satori Tech", latest: false
     }]
 }, {
-    date: `${month[2]} 2019 - ${month[6]} 2019`,
+    date: `${month[0]} 2019 - ${month[6]} 2019`,
     job: "Trainee for Business Planning Systems Developer",
     company: [{
         url: "https://www.edemconsultores.com.mx/", company_name: "EDEM Consultores", latest: false
@@ -33,7 +33,7 @@ const jobs = [{
 
 export default function Experience() {
 
-    return (<Grid xs={12} md={6}>
+    return (<Grid xs={12} md={6} style={{padding: '1rem 0 1rem 0'}}>
         <Container>
             <Card>
                 <Card.Body>

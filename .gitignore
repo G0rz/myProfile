@@ -33,3 +33,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+#firebase
+/.firebaserc
+/firebase.json
+/.firebase/
+/app/initFirebase.jsx
+/.github/workflows/firebase-hosting-merge.yml
+/.github/workflows/firebase-hosting-pull-request.yml

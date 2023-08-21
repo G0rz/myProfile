@@ -2,16 +2,15 @@ import {Card, Grid, Text} from "@nextui-org/react";
 
 export default function Footer() {
 
-    return (<Grid.Container justify={'center'} alignItems={'center'} gap={1}>
-        <Grid>
+    return (<Grid.Container justify={'center'} alignItems={'center'}>
+        <Grid style={{padding: '1rem 0 1rem 0'}}>
             <Card>
                 <Card.Body css={{padding: '.5rem'}}>
-                    <Text css={{
+                    <Text  css={{
                         margin: 0, padding: '.5rem', fontWeight: '$base', lineHeight: '$xs',
-                    }}> © {new Date().getFullYear()}<a href={'https://github.com/G0rz/'}
-                                                       rel="noopener noreferrer"
-                                                       style={{color: "#697177", fontWeight: 'bold'}}
-                                                       target="_blank"> G0rz</a></Text>
+                    }}> Hecho por <a href={'https://github.com/G0rz/'}
+                                     rel="noopener noreferrer" style={{color: "#697177", fontWeight:'bold'}}
+                                     target="_blank"> G0rz</a> © {new Date().getFullYear()}</Text>
                 </Card.Body>
             </Card>
         </Grid>

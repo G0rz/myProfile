@@ -16,14 +16,14 @@ export default function Home() {
     return (<main>
         <Grid.Container justify={'center'} alignItems={'center'} css={{marginTop: '1rem'}}>
             <Grid md={4} xs={12}>
-                <Grid.Container gap={2}>
+                <Grid.Container>
                     <Resume/>
                     <Links/>
                     <Skills/>
                 </Grid.Container>
             </Grid>
             <Grid md={8} xs={12}>
-                <Grid.Container gap={2}>
+                <Grid.Container>
                     <Experience/>
                     <Education/>
                 </Grid.Container>
