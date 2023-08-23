@@ -11,7 +11,7 @@ const schools = [
         url: "https://think-e.mx/", company_name: "Think-e English Courses", latest: true
     }]
 }, {
-    date: `August 2015 - December 2020`, job: "Computer Systems Engineering", company: [{
+    date: `August 2015 - June 2021`, job: "Computer Systems Engineering", company: [{
         url: "https://www.tolucatecnm.mx/", company_name: "Instituto Tecnológico de Toluca", latest: false
     }]
 }];
