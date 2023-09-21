@@ -4,6 +4,7 @@ import {Roboto} from "next/font/google";
 const roboto = Roboto({subsets: ['latin'], weight: ["400", "500", "700", "900"]})
 
 export const metadata = {
+    metadataBase: new URL('https://leonardobecerril.dev/'),
     title: 'Leonardo Yael Bazán Becerril',
     description: 'Computer Systems Engineering Intern | Full Stack Web developer | JavaScript | React | Java | PHP',
     generator: 'G0rz',
@@ -23,9 +24,7 @@ export const metadata = {
         description: 'Computer Systems Engineering Intern | Full Stack Web developer | JavaScript | React | Java | PHP',
         url: 'https://leonardobecerril.dev/',
         siteName: 'Personal Profile',
-        images: [{
-            url: 'https://leonardobecerril.dev/icon-512x512.png', width: 512, height: 512,
-        }],
+        images: '/icon-512x512.png',
         locale: 'en_MX',
         type: 'website',
     },
@@ -35,13 +34,11 @@ export const metadata = {
         },
     },
     twitter: {
-        card: 'summary_short_image',
+        card: 'summary',
         title: 'Leonardo Becerril',
         description: 'Computer Systems Engineering Intern | Full Stack Web developer | JavaScript | React | Java | PHP',
-        siteId: '1467726470533754880',
         creator: '@XDeathZero',
-        creatorId: '1467726470533754880',
-        images: ['https://leonardobecerril.dev/icon-192x192.png'],
+        image: '/icon-192x192.png',
     },
     verification: {
         google: 'google',

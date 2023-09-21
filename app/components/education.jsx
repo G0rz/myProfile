@@ -3,12 +3,17 @@ import Timeline from "@/app/components/timeline";
 
 const schools = [
     {
+        date: `August 2021 - Present`, job: "Organizer GDG", company: [{
+            url: "https://gdg.community.dev/gdg-lerma-de-villada/", company_name: "Google Developers Group - Lerma de Villada", latest: true
+        }]
+    },
+    {
         date: `April 2023`, job: "TOEFL ITP Certification - Level B1", company: [{
-            url: "https://www.tolucatecnm.mx/categoria/61/coordinacion-de-lenguas-extranjeras-cle", company_name: "Instituto Tecnológico de Toluca - CLE", latest: true
+            url: "https://www.tolucatecnm.mx/categoria/61/coordinacion-de-lenguas-extranjeras-cle", company_name: "Instituto Tecnológico de Toluca - CLE", latest: false
         }]
     },{
     date: `July 2021 - November 2022`, job: "English language", company: [{
-        url: "https://think-e.mx/", company_name: "Think-e English Courses", latest: true
+        url: "https://think-e.mx/", company_name: "Think-e English Courses", latest: false
     }]
 }, {
     date: `August 2015 - June 2021`, job: "Computer Systems Engineering", company: [{
