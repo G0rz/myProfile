@@ -15,7 +15,7 @@ export const metadata = {
     colorScheme: 'dark',
     creator: 'G0rz',
     icons: {
-        icon: '/icon-192x192.png', apple: '/icon-192x192.png',
+        icon: '/icon-192x192.svg', apple: '/icon-192x192.svg',
     },
     publisher: 'Leonardo Becerril',
     manifest: '/manifest.json',
@@ -24,7 +24,7 @@ export const metadata = {
         description: 'Computer Systems Engineering Intern | Full Stack Web developer | JavaScript | React | Java | PHP',
         url: 'https://leonardobecerril.dev/',
         siteName: 'Personal Profile',
-        images: '/icon-512x512.png',
+        images: '/icon-512x512.svg',
         locale: 'en_MX',
         type: 'website',
     },
@@ -38,7 +38,7 @@ export const metadata = {
         title: 'Leonardo Becerril',
         description: 'Computer Systems Engineering Intern | Full Stack Web developer | JavaScript | React | Java | PHP',
         creator: '@XDeathZero',
-        image: '/icon-192x192.png',
+        image: '/icon-192x192.svg',
     },
     verification: {
         google: 'google',
