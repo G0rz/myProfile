@@ -16,7 +16,7 @@ export const metadata = {
     themeColor: 'dark',
     creator: 'G0rz',
     icons: {
-        icon: '/icon-128.png', apple: '/ios-192.png',
+        icon: '/icon-128.png', apple: '/iOS/ios-192.png',
     },
     publisher: 'Leonardo Becerril',
     manifest: '/manifest.json',
@@ -45,7 +45,7 @@ export const metadata = {
         google: 'google',
     },
     appleWebApp: {
-        title: 'Leonardo Becerril', statusBarStyle: 'black-translucent',
+        title: 'Leonardo Becerril', statusBarStyle: 'black',
     },
     category: 'technology'
 }
