@@ -13,10 +13,7 @@ export const metadata = {
     keywords: ['Computer Systems Engineering Intern', 'Fullstack Web developer', 'Next.js', 'JavaScript', 'React', 'Java', 'PHP'],
     authors: [{name: 'G0rz', url: 'https://github.com/G0rz/'}],
     colorScheme: 'dark light',
-    themeColor: [
-        { media: '(prefers-color-scheme: light)', color: 'cyan' },
-        { media: '(prefers-color-scheme: dark)', color: 'black' },
-    ],
+    themeColor: 'black',
     creator: 'G0rz',
     icons: {
         icon: '/icon-128.png', apple: '/ios-192.png',
