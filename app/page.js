@@ -8,10 +8,19 @@ import Skills from "@/app/components/skills";
 import Experience from "@/app/components/experience";
 import Education from "@/app/components/education";
 import initFirebase from "@/app/initFirebase";
+import {useEffect} from "react";
 
 export default function Home() {
 
     initFirebase()
+
+    useEffect(() => {
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker
+                .register('/serviceworker.js')
+                .then((registration) => console.log('scope is: ', registration.scope));
+        }
+    }, []);
 
     return (<main>
         <Grid.Container justify={'center'} alignItems={'center'} css={{marginTop: '1rem'}}>
