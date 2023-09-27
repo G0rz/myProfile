@@ -8,7 +8,7 @@ const schools = [
         }]
     },
     {
-        date: `April 2023`, job: "TOEFL ITP Certification - Level B1", company: [{
+        date: `May 2023`, job: "TOEFL ITP Certification - CEFR Level B1", company: [{
             url: "https://www.tolucatecnm.mx/categoria/61/coordinacion-de-lenguas-extranjeras-cle", company_name: "Instituto Tecnológico de Toluca - CLE", latest: false
         }]
     },{
