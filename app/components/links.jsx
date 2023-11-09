@@ -14,12 +14,14 @@ const enlaces = [{
     name: 'LinkedIn',
     username: 'Leonardo Yael Bazán Becerril',
     url: 'https://www.linkedin.com/in/typenull/'
-}, {
-    icon: <IndeedIcon/>,
-    name: 'Indeed',
-    username: 'Leonardo Yael Bazán Becerril',
-    url: 'https://www.linkedin.com/in/typenull/'
-}, {
+},
+//     {
+//     icon: <IndeedIcon/>,
+//     name: 'Indeed',
+//     username: 'Leonardo Yael Bazán Becerril',
+//     url: 'https://www.linkedin.com/in/typenull/'
+// },
+    {
     icon: <WebIcon/>, name: 'Website', username: 'leonardo-becerril.netlify.com', url: 'https://leonardo-becerril.netlify.app/'
 }, {
     icon: <MailIcon/>,
