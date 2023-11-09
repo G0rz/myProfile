@@ -6,11 +6,11 @@ const month = ["January", "February", "March", "April", "May", "June", "July", "
 const jobs = [{
     date: `${month[1]} 2023 - Present`, job: "Java Web Developer", company: [{
         url: "https://dgi.edomex.gob.mx/",
-        company_name: "Dirección General de Innovación e Implementación",
+        company_name: "Dirección General de Desarrollo Institucional e Innovación - DGDII",
         latest: true
     }]
 }, {
-    date: `${month[2]} 2022 - ${month[1]} 2023`, job: "Frontend React Web Developer", company: [{
+    date: `${month[2]} 2022 - ${month[1]} 2023`, job: "Front-end React Web Developer", company: [{
         url: "https://daduva.mx/", company_name: "DADUVA SYSTEMS", latest: false
     }]
 }, {
