@@ -22,7 +22,7 @@ const enlaces = [{
 //     url: 'https://www.linkedin.com/in/typenull/'
 // },
     {
-    icon: <WebIcon/>, name: 'Website', username: 'leonardo-becerril.netlify.com', url: 'https://leonardobecerril.netlify.app/'
+    icon: <WebIcon/>, name: 'Website', username: 'leonardobecerril.netlify.com', url: 'https://leonardobecerril.netlify.app/'
 }, {
     icon: <MailIcon/>,
     name: 'Email',
