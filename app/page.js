@@ -23,7 +23,7 @@ export default function Home() {
     }, []);
 
     return (<main>
-        <Grid.Container justify={'center'} alignItems={'center'} css={{marginTop: '1rem'}}>
+        <Grid.Container justify={'center'} alignItems={'center'}>
             <Grid md={4} xs={12}>
                 <Grid.Container>
                     <Resume/>
