@@ -4,18 +4,18 @@ import Timeline from "@/app/components/timeline";
 const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 const jobs = [{
-    date: `${month[1]} 2023 - Present`, job: "Java Web Developer", company: [{
+    date: `${month[1]} 2023 - Present`, job: "Full-Stack Java Web Developer", company: [{
         url: "https://dgi.edomex.gob.mx/",
         company_name: "Dirección General de Desarrollo Institucional e Innovación - DGDII",
         latest: true
     }]
 }, {
-    date: `${month[2]} 2022 - ${month[1]} 2023`, job: "Front-end React Web Developer", company: [{
+    date: `${month[2]} 2022 - ${month[1]} 2023`, job: "Front-End React Web Developer", company: [{
         url: "https://daduva.mx/", company_name: "DADUVA SYSTEMS", latest: false
     }]
 }, {
     date: `${month[2]} 2021 - ${month[2]} 2022`,
-    job: "Internship / Full Stack Web Developer Jr.",
+    job: "Internship / Full-Stack Web Developer Jr.",
     company: [{
         url: "https://satoritech.com.mx/", company_name: "Satori Tech", latest: false
     }]
