@@ -17,6 +17,7 @@ export default function Resume() {
 
     useEffect(() => {
         getData(setGitProfile).then(r => void r);
+        console.log(gitProfile)
     }, []);
 
     const getCVUrl = () => {
@@ -53,7 +54,7 @@ export default function Resume() {
                             style={{
                                 borderRadius: '50%', border: '4px solid #17C964', objectFit: 'cover'
                             }}
-                            src={profilePic}
+                            src={gitProfile ? gitProfile.avatar_url : profilePic}
                             alt="Profile Image"
                             unoptimized
                             width={150}
