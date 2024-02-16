@@ -5,8 +5,8 @@ const month = ["January", "February", "March", "April", "May", "June", "July", "
 
 const jobs = [{
     date: `${month[1]} 2023 - Present`, job: "Full-Stack Java Web Developer", company: [{
-        url: "https://dgi.edomex.gob.mx/",
-        company_name: "Dirección General de Desarrollo Institucional e Innovación - DGDII",
+        url: "https://sseguridad.edomex.gob.mx/",
+        company_name: "Secretaría de Seguridad del Estado de México",
         latest: true
     }]
 }, {

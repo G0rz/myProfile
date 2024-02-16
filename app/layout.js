@@ -30,8 +30,9 @@ export const metadata = {
         type: 'website',
     },
     robots: {
-        index: false, follow: true, nocache: true, googleBot: {
-            index: true, follow: false,
+        index: true, follow: false, nocache: true,
+        googleBot: {
+            index: true, follow: true,
         },
     },
     twitter: {

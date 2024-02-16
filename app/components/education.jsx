@@ -3,9 +3,9 @@ import Timeline from "@/app/components/timeline";
 import Attachments from "@/app/components/attachments";
 
 const schools = [{
-    date: `August 2021 - Present`, job: "Organizer GDG", company: [{
-        url: "https://gdg.community.dev/gdg-lerma-de-villada/",
-        company_name: "Google Developers Group - Lerma de Villada",
+    date: `August 2021 - January 2024`, job: "Organizer for GDG Lerma", company: [{
+        url: "https://gdg.community.dev/",
+        company_name: "Google Developer Groups - Lerma de Villada",
         latest: true
     }]
 }, {

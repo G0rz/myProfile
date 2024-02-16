@@ -17,7 +17,6 @@ export default function Resume() {
 
     useEffect(() => {
         getData(setGitProfile).then(r => void r);
-        console.log(gitProfile)
     }, []);
 
     const getCVUrl = () => {

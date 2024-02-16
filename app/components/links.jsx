@@ -14,21 +14,18 @@ const enlaces = [{
     name: 'LinkedIn',
     username: 'Leonardo Yael Bazán Becerril',
     url: 'https://www.linkedin.com/in/typenull/'
-},
-//     {
+}, //     {
 //     icon: <IndeedIcon/>,
 //     name: 'Indeed',
 //     username: 'Leonardo Yael Bazán Becerril',
 //     url: 'https://www.linkedin.com/in/typenull/'
 // },
     {
-    icon: <WebIcon/>, name: 'Website', username: 'leonardobecerril.netlify.com', url: 'https://leonardobecerril.netlify.app/'
-}, {
-    icon: <MailIcon/>,
-    name: 'Email',
-    username: 'leonardo.becerril@hotmail.com',
-    url: 'mailto:leonardo.becerril@hotmail.com'
-}]
+        icon: <MailIcon/>,
+        name: 'Email',
+        username: 'leonardo.becerril@hotmail.com',
+        url: 'mailto:leonardo.becerril@hotmail.com'
+    }]
 
 export default function Links() {
 
