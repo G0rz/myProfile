@@ -1,4 +1,4 @@
-import {Text} from "@nextui-org/react";
+import {Text, Link} from "@nextui-org/react";
 
 export default function TimelineItem({fecha, puesto, enlace}) {
 
@@ -34,10 +34,10 @@ export default function TimelineItem({fecha, puesto, enlace}) {
             fontWeight: '$semibold', fontSize: '$lg', lineHeight: '$lg'
         }}>{puesto}</Text>
         <Text css={{
-            fontWeight: '$semibold', fontSize: '$base', lineHeight: '$lg'
+            fontWeight: '$semibold', fontSize: '$base', lineHeight: '$lg', color: '$textDefault'
         }}>
-            <a rel="noopener noreferrer" target="_blank" style={{color:"#697177"}}
-               href={enlace[0].url !== '' ? enlace[0].url : '#'}>{enlace[0].company_name}</a>
+            <Link rel="noopener noreferrer" target="_blank" css={{color: '$textDefault'}}
+               href={enlace[0].url !== '' ? enlace[0].url : '#'}>{enlace[0].company_name}</Link>
         </Text>
     </li>);
 }

@@ -1,4 +1,4 @@
-import {Card, Grid, Text} from "@nextui-org/react";
+import {Card, Grid, Text, Link} from "@nextui-org/react";
 
 export default function Footer() {
 
@@ -8,9 +8,9 @@ export default function Footer() {
                 <Card.Body css={{padding: '.5rem'}}>
                     <Text  css={{
                         margin: 0, padding: '.5rem', fontWeight: '$base', lineHeight: '$xs',
-                    }}> Hecho por <a href={'https://github.com/G0rz/'}
-                                     rel="noopener noreferrer" style={{color: "#697177", fontWeight:'bold'}}
-                                     target="_blank"> G0rz</a> © {new Date().getFullYear()}</Text>
+                    }}> Hecho por <Link href={'https://github.com/G0rz/'}
+                                     rel="noopener noreferrer" css={{fontWeight:'$bold', color: '$textDefault'}}
+                                     target="_blank"> G0rz</Link> © {new Date().getFullYear()}</Text>
                 </Card.Body>
             </Card>
         </Grid>

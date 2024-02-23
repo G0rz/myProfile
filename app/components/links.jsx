@@ -33,7 +33,7 @@ export default function Links() {
         <Container>
             <Card>
                 <Card.Body>
-                    <Row justify="center" align="center" style={{padding: '.5rem', opacity: '.6'}}>
+                    <Row justify="center" align="center" style={{padding: '.5rem'}}>
                         <Text size="$sm" weight={'medium'}><LocationIcon/> Based in: </Text>
                         <Text css={{marginLeft: 'auto'}} size="$sm" weight={'medium'}>Toluca, Estado de
                             México</Text>

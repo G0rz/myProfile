@@ -4,9 +4,11 @@ export const darkTheme = createTheme({
     type: "dark", // it could be "light" or "dark"
     theme: {
         colors: {
-            background: '#0F1623',
-            backgroundContrast: "#1D232A",
-            primary: "#697177"
+            background: '#0C121C',
+            backgroundContrast: "#0F1623",
+            primary: "#121A2A",
+            success: "#094925",
+            textDefault: "#BEC2C5"
         },
         fontSizes: {
             xs: '0.75rem', /* 12px */
@@ -108,9 +110,11 @@ export const lightTheme = createTheme({
     type: 'light',
     theme: {
         colors: {
-            background: "#F0F2F5",
-            backgroundContrast: "#FEFEFE",
-            primary: "#697177"
+            background: "#B6C0CE",
+            backgroundContrast: "#FFFFFF",
+            primary: "#FFFFFF",
+            success: "#094925",
+            textDefault: "#3E4346"
         },
         fontSizes: {
             xs: '0.75rem', /* 12px */

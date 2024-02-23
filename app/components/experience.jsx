@@ -23,11 +23,11 @@ const jobs = [{
     date: `${month[0]} 2019 - ${month[6]} 2019`,
     job: "Trainee for Business Planning Systems Developer",
     company: [{
-        url: "https://www.edemconsultores.com.mx/", company_name: "EDEM Consultores", latest: false
+        url: "", company_name: "EDEM Consultores", latest: false
     }]
 }, {
     date: '', job: "Technical Support Engineer", company: [{
-        url: "https://leonardobecerril.netlify.app/", company_name: "Autodidact", latest: false
+        url: "", company_name: "Autodidact", latest: false
     }]
 }];
 

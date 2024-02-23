@@ -42,18 +42,23 @@ export default function Resume() {
                 <Card.Header>
                     <Row justify="center" align="center" css={{paddingTop: '1.5rem'}}>
                         <Switch
-                            aria-label={'switch'}
+                            id={"icon"}
+                            aria-labelledby={"icon"}
+                            aria-label={"icon"}
+                            title={"icon"}
                             style={{position: 'absolute', top: 0, right: 0}}
                             checked={isDark}
-                            iconOff={<SunIcon aria-label={'sun'} filled/>}
-                            iconOn={<MoonIcon aria-label={'moon'} filled/>}
+                            iconOff={<SunIcon aria-labelledby={"icon"}
+                                              aria-label={"icon"} filled/>}
+                            iconOn={<MoonIcon aria-labelledby={"icon"}
+                                              aria-label={"icon"} filled/>}
                             onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
                         />
                         <Image
                             style={{
-                                borderRadius: '50%', border: '4px solid #17C964', objectFit: 'cover'
+                                borderRadius: '50%', objectFit: 'cover'
                             }}
-                            src={gitProfile ? gitProfile.avatar_url : profilePic}
+                            src={gitProfile.avatar_url ? gitProfile.avatar_url : profilePic}
                             alt="Profile Image"
                             unoptimized
                             width={150}
@@ -69,14 +74,13 @@ export default function Resume() {
                             }}>{gitProfile.name !== '' ? gitProfile.name : 'Leonardo Yael Bazán Becerril'}</Text>
                         </Row>
                         <Row justify="center" align="center">
-                            <Text weight={'medium'} span css={{opacity: '.7', marginBottom: '.75rem'}}>
+                            <Text weight={'medium'} span css={{marginBottom: '.75rem'}}>
                                 {gitProfile.bio !== '' ? gitProfile.bio : 'Computer Systems Engineering Intern'}
                             </Text>
                         </Row>
                         <Row justify="center" align="center">
                             <Button
                                 icon={loading ? '' : <DownloadIcon label={'download'} isDark={isDark}/>}
-                                bordered
                                 onPress={downloadCV}
                                 enabled={'false'}
                                 color="success"
