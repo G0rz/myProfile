@@ -3,9 +3,7 @@ import {LocationIcon} from "@/public/assets/images/LocationIcon";
 import SmartLinks from "@/app/components/smartLinks";
 import {GithubIcon} from "@/public/assets/images/GithubIcon"
 import {LinkedinIcon} from "@/public/assets/images/LinkedinIcon";
-import {WebIcon} from "@/public/assets/images/WebIcon";
 import {MailIcon} from "@/public/assets/images/MailIcon";
-import {IndeedIcon} from "@/public/assets/images/IndeedIcon";
 
 const enlaces = [{
     icon: <GithubIcon/>, name: 'Github', username: 'G0rz', url: 'https://github.com/G0rz'

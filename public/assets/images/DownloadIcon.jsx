@@ -1,4 +1,4 @@
-export const DownloadIcon = ({fill = 'currentColor', filled, size, height, width, label, isDark}) => {
+export const DownloadIcon = ({fill = 'currentColor', filled, size, height, width}) => {
     return (<svg width={size || width || 24}
                  height={size || height || 24}
                  viewBox="0 0 24 24"
