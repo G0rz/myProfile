@@ -17,7 +17,7 @@ export default function Skills() {
                             </Grid>
                             {listSkills.map((element, key) => {
                                 return <Grid key={key}>
-                                    <Badge color="success" disableOutline css={{margin: '.2rem'}}>{element}</Badge>
+                                    <p  style={{margin: '.2rem', backgroundColor: '#094925', borderRadius:'24px', padding:'0 8px', color:'white', fontWeight:'bold', fontSize:'14px'}}>{element}</p>
                                 </Grid>
                             })}
                         </Grid.Container>

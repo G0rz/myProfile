@@ -6,101 +6,51 @@
   "start_url": "/",
   "name": "Leo Dev",
   "short_name": "Leo Dev",
-  "description": "A PWA app for show my profile",
+  "description": "PWA app for show my profile",
   "icons": [
     {
-      "src": "/Android/android-64.png",
-      "sizes": "64x64",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/Android/android-128.png",
-      "sizes": "128x128",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/Android/android-192.png",
+      "src": "/assets/icons/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "/Android/android-256.png",
-      "sizes": "256x256",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/iOS/ios-64.png",
-      "sizes": "64x64",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/iOS/ios-128.png",
-      "sizes": "128x128",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/iOS/ios-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/icon-64x64.svg",
-      "sizes": "64x64",
-      "type": "image/svg",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/icon-128.png",
-      "sizes": "128x128",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/icon-128x128.svg",
-      "sizes": "128x128",
-      "type": "image/svg",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/icon-192x192.svg",
-      "sizes": "192x192",
-      "type": "image/svg",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/icon-256.png",
-      "sizes": "256x256",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/icon-256x256.svg",
-      "sizes": "256x256",
-      "type": "image/svg",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "/icon-384x384.svg",
+      "src": "/assets/icons/android-chrome-384x384.png",
       "sizes": "384x384",
-      "type": "image/svg",
+      "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "/icon-512.png",
+      "src": "/assets/icons/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable any"
     },
     {
-      "src": "/icon-512x512.svg",
-      "sizes": "512x512",
+      "src": "/assets/icons/apple-touch-icon.png",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/icons/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/icons/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/icons/mstile-150x150.png",
+      "sizes": "150x150",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/assets/icons/safari-pinned-tab.svg",
       "type": "image/svg",
       "purpose": "maskable any"
     }

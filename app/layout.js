@@ -5,29 +5,29 @@ const roboto = Roboto({subsets: ['latin'], weight: ["400", "500", "700", "900"]}
 
 export const metadata = {
     metadataBase: new URL('https://leonardobecerril.dev/'),
-    title: 'Leonardo Yael Bazán Becerril',
-    description: 'Computer Systems Engineering Intern | Full Stack Web developer | JavaScript | React | Java | PHP',
-    generator: 'G0rz',
-    applicationName: 'Personal Profile',
+    title: 'Leonardo Yael Bazán Becerril | Computer Systems Engineer',
+    description: 'Computer Systems Engineer | Front-End Web Developer',
+    applicationName: 'Leonardo Yael Bazán Becerril | Personal Website',
     referrer: 'origin-when-cross-origin',
-    keywords: ['Computer Systems Engineering Intern', 'Fullstack Web developer', 'Next.js', 'JavaScript', 'React', 'Java', 'PHP'],
+    keywords: ['Computer Systems Engineer', 'Front-End Web developer', 'Next.js developer', 'Javascript', 'React js developer', 'Java developer', 'PHP developer'],
     authors: [{name: 'G0rz', url: 'https://github.com/G0rz/'}],
     colorScheme: 'dark light',
     themeColor: 'dark',
     creator: 'G0rz',
     icons: {
-        icon: '/icon-128.png', apple: '/iOS/ios-192.png',
+        icon: '/assets/icons/android-chrome-512x512.png', apple: '/assets/icons/apple-touch-icon.png',
     },
-    publisher: 'Leonardo Becerril',
+    publisher: 'Squarespaces',
     manifest: '/manifest.json',
     openGraph: {
-        title: 'Leonardo Becerril',
-        description: 'Computer Systems Engineering Intern | Full Stack Web developer | JavaScript | React | Java | PHP',
+        title: 'Leonardo Yael Bazán Becerril | Computer Systems Engineer',
+        description: 'Computer Systems Engineer | Front-End Web Developer',
         url: 'https://leonardobecerril.dev/',
-        siteName: 'Personal Profile',
-        images: '/icon-512.png',
+        siteName: 'Leonardo Yael Bazán Becerril | Personal Website',
+        images: '/assets/icons/android-chrome-512x512.png',
         locale: 'en_MX',
         type: 'website',
+        authors: ['G0rz'],
     },
     robots: {
         index: true, follow: false, nocache: true,
@@ -37,18 +37,20 @@ export const metadata = {
     },
     twitter: {
         card: 'summary',
-        title: 'Leonardo Becerril',
-        description: 'Computer Systems Engineering Intern | Full Stack Web developer | JavaScript | React | Java | PHP',
+        title: 'Leonardo Yael Bazán Becerril | Computer Systems Engineer',
+        description: 'Computer Systems Engineer | Front-End Web Developer',
         creator: '@XDeathZero',
-        image: '/icon-128.png',
+        image: ['https://leonardobecerril.dev/assets/icons/android-chrome-512x512.png'],
     },
     verification: {
         google: 'google',
     },
     appleWebApp: {
-        title: 'Leonardo Becerril', statusBarStyle: 'black',
+        title: 'Leonardo Yael Bazán Becerril | Computer Systems Engineer', statusBarStyle: 'black-translucent',
     },
-    category: 'technology'
+    category: 'technology',
+    archives: ['https://leonardobecerril.dev/assets/files/CV-LeonardoYaelBazánBecerril.pdf'],
+    assets: ['https://leonardobecerril.dev/assets']
 }
 export default function RootLayout({children}) {
     return (<html lang="en">

@@ -24,6 +24,12 @@ const schools = [{
     }]
 }];
 
+const attachments = [{
+    date: ``, job: "", company: [{
+        url: '/assets/files/CertificationB1.pdf', company_name: "TOEFL ITP Certification - CEFR Level B1", latest: false
+    }]
+}];
+
 export default function Education() {
 
     return (<>
@@ -44,11 +50,18 @@ export default function Education() {
                                 <Grid>
                                     <Timeline list={schools}/>
                                 </Grid>
+                                <Grid xs={12}>
+                                    <Text h3 css={{
+                                        marginLeft: '.75rem', fontWeight: '$semibold', fontSize: '$xl', lineHeight: '$lg'
+                                    }}>Attachments</Text>
+                                </Grid>
+                                <Grid>
+                                    <Timeline list={attachments}/>
+                                </Grid>
                             </Grid.Container>
                         </Row>
                     </Card.Body>
                 </Card>
-                <Attachments/>
             </Container>
         </Grid>
 
