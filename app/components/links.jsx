@@ -27,22 +27,24 @@ const enlaces = [{
 
 export default function Links() {
 
-    return (<Grid xs={12} style={{padding: '1rem 0 1rem 0'}}>
-        <Container>
-            <Card>
-                <Card.Body>
-                    <Row justify="center" align="center" style={{padding: '.5rem'}}>
-                        <Text size="$sm" weight={'medium'}><LocationIcon/> Based in: </Text>
-                        <Text css={{marginLeft: 'auto'}} size="$sm" weight={'medium'}>Toluca, Estado de
-                            México</Text>
-                    </Row>
-                    {enlaces.map((item, key) => {
-                        return <SmartLinks key={key} icon={item.icon} name={item.name}
-                                           username={item.username}
-                                           url={item.url}/>
-                    })}
-                </Card.Body>
-            </Card>
-        </Container>
-    </Grid>);
+    return (<section role={'links'}>
+        <Grid xs={12} style={{padding: '1rem 0 1rem 0'}}>
+            <Container>
+                <Card>
+                    <Card.Body>
+                        <Row justify="center" align="center" style={{padding: '.5rem'}}>
+                            <Text size="$sm" weight={'medium'}><LocationIcon/> Based in: </Text>
+                            <Text css={{marginLeft: 'auto'}} size="$sm" weight={'medium'}>Toluca, Estado de
+                                México</Text>
+                        </Row>
+                        {enlaces.map((item, key) => {
+                            return <SmartLinks key={key} icon={item.icon} name={item.name}
+                                               username={item.username}
+                                               url={item.url}/>
+                        })}
+                    </Card.Body>
+                </Card>
+            </Container>
+        </Grid>
+    </section>);
 }

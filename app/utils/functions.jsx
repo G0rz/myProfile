@@ -7,7 +7,8 @@ export const getData = async (setGitProfile) => {
             return setGitProfile(response.data);
         })
         .catch(error => {
-            return console.log(error)
+            console.log(error)
+            return false
         }).finally(function () {
             // siempre sera executado
         });

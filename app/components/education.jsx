@@ -4,9 +4,7 @@ import Attachments from "@/app/components/attachments";
 
 const schools = [{
     date: `August 2021 - January 2024`, job: "Organizer for GDG Lerma", company: [{
-        url: "https://gdg.community.dev/",
-        company_name: "Google Developer Groups - Lerma de Villada",
-        latest: true
+        url: "https://gdg.community.dev/", company_name: "Google Developer Groups - Lerma de Villada", latest: true
     }]
 }, {
     date: `May 2023`, job: "TOEFL ITP Certification - CEFR Level B1", company: [{
@@ -32,7 +30,7 @@ const attachments = [{
 
 export default function Education() {
 
-    return (<>
+    return (<section role={'education'}>
         <Grid xs={12} md={6} style={{padding: '1rem 0 1rem 0'}}>
             <Container>
                 <Card>
@@ -52,7 +50,10 @@ export default function Education() {
                                 </Grid>
                                 <Grid xs={12}>
                                     <Text h3 css={{
-                                        marginLeft: '.75rem', fontWeight: '$semibold', fontSize: '$xl', lineHeight: '$lg'
+                                        marginLeft: '.75rem',
+                                        fontWeight: '$semibold',
+                                        fontSize: '$xl',
+                                        lineHeight: '$lg'
                                     }}>Attachments</Text>
                                 </Grid>
                                 <Grid>
@@ -65,5 +66,5 @@ export default function Education() {
             </Container>
         </Grid>
 
-    </>);
+    </section>);
 }

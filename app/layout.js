@@ -9,15 +9,13 @@ export const metadata = {
     description: 'Computer Systems Engineer | Front-End Web Developer',
     applicationName: 'Leonardo Yael Bazán Becerril | Personal Website',
     referrer: 'origin-when-cross-origin',
+    apple: '/assets/icons/apple-touch-icon.png',
     keywords: ['Computer Systems Engineer', 'Front-End Web developer', 'Next.js developer', 'Javascript', 'React js developer', 'Java developer', 'PHP developer'],
     authors: [{name: 'G0rz', url: 'https://github.com/G0rz/'}],
-    colorScheme: 'dark light',
-    themeColor: 'dark',
     creator: 'G0rz',
     icons: {
         icon: '/assets/icons/android-chrome-512x512.png', apple: '/assets/icons/apple-touch-icon.png',
     },
-    publisher: 'Squarespaces',
     manifest: '/manifest.json',
     openGraph: {
         title: 'Leonardo Yael Bazán Becerril | Computer Systems Engineer',
