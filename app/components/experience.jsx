@@ -33,27 +33,24 @@ const jobs = [{
 
 export default function Experience() {
 
-    return (
-      <section role={'experience'}>
-          <Grid xs={12} md={6} style={{padding: '1rem 0 1rem 0'}}>
-              <Container>
-                  <Card>
-                      <Card.Body>
-                          <Row justify="center" align="center">
-                              <Grid.Container>
-                                  <Grid xs={12}>
-                                      <Text h3 css={{
-                                          marginLeft: '.75rem', fontWeight: '$semibold', fontSize: '$xl', lineHeight: '$lg'
-                                      }}>Experience</Text>
-                                  </Grid>
-                                  <Grid>
-                                      <Timeline list={jobs}/>
-                                  </Grid>
-                              </Grid.Container>
-                          </Row>
-                      </Card.Body>
-                  </Card>
-              </Container>
-          </Grid>
-      </section>);
+    return (<Grid role={'experience'} xs={12} md={6} style={{padding: '1rem 0 1rem 0'}}>
+        <Container>
+            <Card>
+                <Card.Body>
+                    <Row justify="center" align="center">
+                        <Grid.Container>
+                            <Grid xs={12}>
+                                <Text h3 css={{
+                                    marginLeft: '.75rem', fontWeight: '$semibold', fontSize: '$xl', lineHeight: '$lg'
+                                }}>Experience</Text>
+                            </Grid>
+                            <Grid>
+                                <Timeline list={jobs}/>
+                            </Grid>
+                        </Grid.Container>
+                    </Row>
+                </Card.Body>
+            </Card>
+        </Container>
+    </Grid>);
 }

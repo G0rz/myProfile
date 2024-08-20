@@ -36,67 +36,65 @@ export default function Resume() {
         return timer;
     };
 
-    return (<section role={'resume'}>
-            <Grid xs={12} style={{padding: '1rem 0 1rem 0'}}>
-                <Container>
-                    <Card>
-                        <Card.Header>
-                            <Row justify="center" align="center" css={{paddingTop: '1.5rem', width: '100%'}}>
-                                <Switch
-                                    id={"icon"}
-                                    aria-labelledby={"icon"}
-                                    aria-label={"icon"}
-                                    title={"icon"}
-                                    style={{position: 'absolute', top: 0, right: 0}}
-                                    checked={isDark}
-                                    iconOff={<SunIcon aria-labelledby={"icon"}
-                                                      aria-label={"icon"} filled/>}
-                                    iconOn={<MoonIcon aria-labelledby={"icon"}
-                                                      aria-label={"icon"} filled/>}
-                                    onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
-                                />
-                                <div style={{display: 'flex', flexDirection: 'column', height: '150px', width: '150px'}}>
-                                    <Image
-                                        style={{
-                                            width: '100%', height: 'auto', borderRadius: '50%', objectFit: 'cover'
-                                        }}
-                                        src={gitProfile.avatar_url ? gitProfile.avatar_url : profilePic}
-                                        alt="Profile Image"
-                                        unoptimized
-                                        width={150}
-                                        height={150}
-                                    />
-                                </div>
-                            </Row>
-                        </Card.Header>
-                        <Card.Body css={{textAlign: 'center'}}>
-                            {gitProfile.name ? (<>
-                                <Row justify="center" align="center">
-                                    <Text h1 css={{
-                                        fontWeight: '$semibold', fontSize: '$2xl', lineHeight: '$lg'
-                                    }}>{gitProfile.name !== '' ? gitProfile.name : 'Leonardo Yael Bazán Becerril'}</Text>
-                                </Row>
-                                <Row justify="center" align="center">
-                                    <Text weight={'medium'} span css={{marginBottom: '.75rem'}}>
-                                        {gitProfile.bio !== '' ? gitProfile.bio : 'Computer Systems Engineering Intern'}
-                                    </Text>
-                                </Row>
-                                <Row justify="center" align="center">
-                                    <Button
-                                        icon={loading ? '' : <DownloadIcon label={'download'} isDark={isDark}/>}
-                                        onPress={downloadCV}
-                                        enabled={'false'}
-                                        color="success"
-                                        disabled={loading}
-                                        auto
-                                    >
-                                        {loading ? <Loading type="points" color="currentColor"/> : 'Download Resume'}
-                                    </Button>
-                                </Row>
-                            </>) : (<Loading type="points" color="success"/>)}
-                        </Card.Body>
-                    </Card>
-                </Container>
-            </Grid>
-        </section>);
+    return (<Grid role={'resume'} xs={12} style={{padding: '1rem 0 1rem 0'}}>
+        <Container>
+            <Card>
+                <Card.Header>
+                    <Row justify="center" align="center" css={{paddingTop: '1.5rem', width: '100%'}}>
+                        <Switch
+                            id={"icon"}
+                            aria-labelledby={"icon"}
+                            aria-label={"icon"}
+                            title={"icon"}
+                            style={{position: 'absolute', top: 0, right: 0}}
+                            checked={isDark}
+                            iconOff={<SunIcon aria-labelledby={"icon"}
+                                              aria-label={"icon"} filled/>}
+                            iconOn={<MoonIcon aria-labelledby={"icon"}
+                                              aria-label={"icon"} filled/>}
+                            onChange={(e) => setTheme(e.target.checked ? 'dark' : 'light')}
+                        />
+                        <div style={{display: 'flex', flexDirection: 'column', height: '150px', width: '150px'}}>
+                            <Image
+                                style={{
+                                    width: '100%', height: 'auto', borderRadius: '50%', objectFit: 'cover'
+                                }}
+                                src={gitProfile.avatar_url ? gitProfile.avatar_url : profilePic}
+                                alt="Profile Image"
+                                unoptimized
+                                width={150}
+                                height={150}
+                            />
+                        </div>
+                    </Row>
+                </Card.Header>
+                <Card.Body css={{textAlign: 'center'}}>
+                    {gitProfile.name ? (<>
+                        <Row justify="center" align="center">
+                            <Text h1 css={{
+                                fontWeight: '$semibold', fontSize: '$2xl', lineHeight: '$lg'
+                            }}>{gitProfile.name !== '' ? gitProfile.name : 'Leonardo Yael Bazán Becerril'}</Text>
+                        </Row>
+                        <Row justify="center" align="center">
+                            <Text weight={'medium'} span css={{marginBottom: '.75rem'}}>
+                                {gitProfile.bio !== '' ? gitProfile.bio : 'Computer Systems Engineering Intern'}
+                            </Text>
+                        </Row>
+                        <Row justify="center" align="center">
+                            <Button
+                                icon={loading ? '' : <DownloadIcon label={'download'} isDark={isDark}/>}
+                                onPress={downloadCV}
+                                enabled={'false'}
+                                color="success"
+                                disabled={loading}
+                                auto
+                            >
+                                {loading ? <Loading type="points" color="currentColor"/> : 'Download Resume'}
+                            </Button>
+                        </Row>
+                    </>) : (<Loading type="points" color="success"/>)}
+                </Card.Body>
+            </Card>
+        </Container>
+    </Grid>);
 }

@@ -30,41 +30,32 @@ const attachments = [{
 
 export default function Education() {
 
-    return (<section role={'education'}>
-        <Grid xs={12} md={6} style={{padding: '1rem 0 1rem 0'}}>
-            <Container>
-                <Card>
-                    <Card.Body>
-                        <Row justify="center" align="center">
-                            <Grid.Container>
-                                <Grid xs={12}>
-                                    <Text h3 css={{
-                                        marginLeft: '.75rem',
-                                        fontWeight: '$semibold',
-                                        fontSize: '$xl',
-                                        lineHeight: '$lg'
-                                    }}>Education</Text>
-                                </Grid>
-                                <Grid>
-                                    <Timeline list={schools}/>
-                                </Grid>
-                                <Grid xs={12}>
-                                    <Text h3 css={{
-                                        marginLeft: '.75rem',
-                                        fontWeight: '$semibold',
-                                        fontSize: '$xl',
-                                        lineHeight: '$lg'
-                                    }}>Attachments</Text>
-                                </Grid>
-                                <Grid>
-                                    <Timeline list={attachments}/>
-                                </Grid>
-                            </Grid.Container>
-                        </Row>
-                    </Card.Body>
-                </Card>
-            </Container>
-        </Grid>
-
-    </section>);
+    return (<Grid xs={12} md={6} role={'education'} style={{padding: '1rem 0 1rem 0'}}>
+        <Container>
+            <Card>
+                <Card.Body>
+                    <Row justify="center" align="center">
+                        <Grid.Container>
+                            <Grid xs={12}>
+                                <Text h3 css={{
+                                    marginLeft: '.75rem', fontWeight: '$semibold', fontSize: '$xl', lineHeight: '$lg'
+                                }}>Education</Text>
+                            </Grid>
+                            <Grid>
+                                <Timeline list={schools}/>
+                            </Grid>
+                            <Grid xs={12}>
+                                <Text h3 css={{
+                                    marginLeft: '.75rem', fontWeight: '$semibold', fontSize: '$xl', lineHeight: '$lg'
+                                }}>Attachments</Text>
+                            </Grid>
+                            <Grid>
+                                <Timeline list={attachments}/>
+                            </Grid>
+                        </Grid.Container>
+                    </Row>
+                </Card.Body>
+            </Card>
+        </Container>
+    </Grid>);
 }

@@ -2,7 +2,7 @@ import {Card, Grid, Text, Link} from "@nextui-org/react";
 
 export default function Footer() {
 
-    return (<footer>
+    return (<>
         <Grid.Container justify={'center'} alignItems={'center'}>
             <Grid style={{padding: '1rem 0 1rem 0'}}>
                 <Text  css={{
@@ -12,5 +12,5 @@ export default function Footer() {
                                     target="_blank"> G0rz</Link> © {new Date().getFullYear()}</Text>
             </Grid>
         </Grid.Container>
-    </footer>);
+    </>);
 }
