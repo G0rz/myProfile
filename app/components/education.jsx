@@ -26,7 +26,16 @@ const attachments = [{
     date: ``, job: "", company: [{
         url: '/assets/files/CertificationB1.pdf', company_name: "TOEFL ITP Certification - CEFR Level B1", latest: false
     }]
-}];
+}, {
+    date: ``, job: "", company: [{
+        url: '/assets/files/Coursera IBXJRQDIYF4B.pdf', company_name: "Project Certificate - Getting Started with Data Analytics on AWS", latest: false
+    }]
+},
+    {
+        date: ``, job: "", company: [{
+            url: '/assets/files/Coursera OVV770NV260F.pdf', company_name: "Project Certificate - Google Ads for Beginners", latest: false
+        }]
+    }];
 
 export default function Education() {
 
