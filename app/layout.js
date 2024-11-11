@@ -6,11 +6,11 @@ const roboto = Roboto({subsets: ['latin'], weight: ["400", "500", "700", "900"]}
 export const metadata = {
     metadataBase: new URL('https://leonardobecerril.dev/'),
     title: 'Leonardo Yael Bazán Becerril | Computer Systems Engineer',
-    description: 'Computer Systems Engineer | Front-End Web Developer',
+    description: 'Computer Systems Engineer | Web Developer',
     applicationName: 'Leonardo Yael Bazán Becerril | Personal Website',
     referrer: 'origin-when-cross-origin',
     apple: '/assets/icons/apple-touch-icon.png',
-    keywords: ['Computer Systems Engineer', 'Front-End Web developer', 'Next.js developer', 'Javascript', 'React js developer', 'Java developer', 'PHP developer'],
+    keywords: ['Computer Systems Engineer', 'Web developer', 'Next.js developer', 'Javascript', 'React js developer', 'Java developer', 'PHP developer'],
     authors: [{name: 'G0rz', url: 'https://github.com/G0rz/'}],
     creator: 'G0rz',
     icons: {
@@ -28,8 +28,7 @@ export const metadata = {
         authors: ['G0rz'],
     },
     robots: {
-        index: true, follow: false, nocache: true,
-        googleBot: {
+        index: true, follow: false, nocache: true, googleBot: {
             index: true, follow: true,
         },
     },
@@ -42,9 +41,6 @@ export const metadata = {
     },
     verification: {
         google: 'google',
-    },
-    appleWebApp: {
-        title: 'Leonardo Yael Bazán Becerril | Computer Systems Engineer', statusBarStyle: 'black-translucent',
     },
     category: 'technology',
     archives: ['https://leonardobecerril.dev/assets/files/CV-LeonardoYaelBazánBecerril.pdf'],
