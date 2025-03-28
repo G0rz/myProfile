@@ -4,7 +4,7 @@ import Timeline from "@/app/components/timeline";
 const month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 const jobs = [{
-    date: `${month[3]} 2024 - Present`, job: "Front-End Web Developer", company: [{
+    date: `${month[3]} 2024 - ${month[11]} 2024`, job: "Front-End Web Developer", company: [{
         url: "https://excite.com.mx/", company_name: "Inbound Marketing México – Excite", latest: true
     }]
 }, {
